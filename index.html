@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <h1>Alexis Xavier Banderas Santamaria</h1>
+        <p>Desarrollador Full Stack Java</p>
+    </header>
+    
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul>
+            <li><a href="#about" aria-label="Ir a la sección sobre mí">Sobre mí</a></li>
+            <li><a href="#skills" aria-label="Ir a la sección de habilidades">Habilidades</a></li>
+            <li><a href="experience.html" aria-label="Ir a la sección de proyectos">Proyectos</a></li>
+            <li><a href="contact.html" aria-label="Ir a la sección de contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">Sobre mí</h2>
+            <div class="image-container">
+                <img src="img/Foto.jpeg" alt="Imagen de Alexis Xavier, desarrollador Full Stack" class="profile-image"/>
+            </div>
+            <p>Desarrollador Full Stack Java con experiencia en Spring Boot y React. Apasionado por crear soluciones eficientes y experiencias intuitivas, combinando tecnología, diseño y funcionalidad. Comprometido con la excelencia, el detalle y el aprendizaje continuo.</p>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title">Habilidades</h2>
+            <div class="skill" aria-labelledby="html-icon">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/012/302/987/small_2x/stylized-3d-html-logo-side-view-png.png" alt="Ícono de HTML, lenguaje de marcado" />
+                <p id="html-icon">HTML</p>
+            </div>
+            <div class="skill" aria-labelledby="css-icon">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/665/094/small_2x/stylized-3d-css-icon-side-view-free-png.png" alt="Ícono de CSS, lenguaje de estilos" />
+                <p id="css-icon">CSS</p>
+            </div>
+            <div class="skill" aria-labelledby="scss-icon">
+                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-sass-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-preprocessor-scripting-language-css-coding-lang-pack-logos-icons-7578019.png?f=webp" alt="Ícono de SCSS, extensión de CSS" />
+                <p id="scss-icon">SCSS</p>
+            </div>
+            <div class="skill" aria-labelledby="js-icon">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small_2x/3d-javascript-logo-design-free-png.png" alt="Ícono de JavaScript, lenguaje de programación" />
+                <p id="js-icon">JavaScript</p>
+            </div>
+            <div class="skill" aria-labelledby="git-icon">
+                <img src="https://ouch-cdn2.icons8.com/_qv0GZ-TvUNz7L6kTDY6jQTK0ZL8PBgeSRketqzOyB0/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDEw/LzY2ZThhYzc1LTJh/ZjAtNDk4MC1hNThl/LWMwOWY0NWIyM2Mz/NS5wbmc.png" alt="Ícono de Git y GitHub, herramientas de control de versiones" />
+                <p id="git-icon">Git & GitHub</p>
+            </div>
+            <div class="skill" aria-labelledby="jquery-icon">
+                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-jquery-3d-icon-download-in-png-blend-fbx-gltf-file-formats--javascript-library-html-scripting-logo-frontend-coding-lang-pack-logos-icons-7578007.png" alt="Ícono de jQuery, biblioteca de JavaScript" />
+                <p id="jquery-icon">jQuery</p>
+            </div>
+            <div class="skill" aria-labelledby="ajax-icon">
+                <img src="https://static.thenounproject.com/png/4147235-200.png" alt="Ícono de AJAX, tecnología para solicitudes asíncronas" />
+                <p id="ajax-icon">AJAX & API´s</p>
+            </div>
+            <div class="skill" aria-labelledby="node-icon">
+                <img src="https://pixelwibes.com/public/front/images/service/node-logo.png" alt="Ícono de Node.js, entorno de ejecución de JavaScript" />
+                <p id="node-icon">Node.js</p>
+            </div>
+            <div class="skill" aria-labelledby="ts-icon">
+                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-mecanografiado-11492969-9325304.png?f=webp" alt="Ícono de TypeScript, lenguaje de programación" />
+                <p id="ts-icon">TypeScript</p>
+            </div>
+            <div class="skill" aria-labelledby="react-icon">
+                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-react-native-3d-logo-download-in-png-blend-fbx-gltf-file-formats--software-social-media-pack-logos-4642743.png?f=webp" alt="Ícono de React, biblioteca de JavaScript" />
+                <p id="react-icon">React</p>
+            </div>
+            <div class="skill" aria-labelledby="docker-icon">
+                <img src="https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png" alt="Ícono de Docker, plataforma de contenedores" />
+                <p id="docker-icon">Docker</p>
+            </div>
+            <div class="skill" aria-labelledby="maven-icon">
+                <img src="https://static-00.iconduck.com/assets.00/file-type-maven-icon-192x256-wb8b12w6.png" alt="Ícono de Maven, herramienta de construcción y gestión de proyectos" />
+                <p id="maven-icon">Maven</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Alexis Xavier Banderas Santamaria</p>
+    </footer>
+</body>
+</html>

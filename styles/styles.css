@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; 
+    color: #333; 
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333; 
+    color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+header h1, h2 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1f8ef1; 
+    transform: scale(1.05); 
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; 
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image-container:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: stretch;
+    margin-top: 30px;
+}
+
+#skills-title, #about-title {
+    grid-column: span 4; 
+    font-size: 2em; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-weight: bold;
+    color: #1f8ef1; 
+}
+
+.skill:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #1f8ef1; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0059b3; 
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px;
+    align-items: center;
+}
+
+.experience-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-button {
+    background-color: #1f8ef1;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.experience-button:hover {
+    background-color: #0059b3;
+    transform: scale(1.05);
+}
+
+.experience-details {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    text-align: justify;
+    line-height: 1.6;
+    text-justify: inter-word;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    padding: 0 10px; 
+}
+
+.experience-item.active .experience-details {
+    max-height: 1000px; 
+    opacity: 1;
+    padding: 10px;  
+}
+
+.experience-details a {
+    color: #007bff; 
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.experience-details a:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+    color: #1f8ef1; 
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 8px;
+    background-color: #f7f7f7;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1f8ef1;
+    box-shadow: 0 0 8px rgba(31, 142, 241, 0.5);
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #1f8ef1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #0059b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #1f8ef1; 
+    transform: scale(1.05); 
+}
+
+
+/* Animaciones */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .contact-form {
+        width: 80%;
+        padding: 30px;
+    }
+
+    footer nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    footer nav a {
+        font-size: 1rem; 
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-button {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        font-size: 1.1rem;
+    }
+
+    footer nav a {
+        font-size: 0.9rem; 
+        padding: 6px 0;
+    }
+}

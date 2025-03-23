@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <h1>Trabajemos juntos</h1>
+    </header>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="index.html" aria-label="Ir a la sección sobre mí">Sobre mí</a></li>
+            <li><a href="index.html" aria-label="Ir a la sección de habilidades">Habilidades</a></li>
+            <li><a href="experience.html" aria-label="Ir a la sección de proyectos">Proyectos</a></li>
+            <li><a href="contact.html" aria-label="Ir a la sección de contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <form class="contact-form" aria-labelledby="contact-form" role="form">
+            <h2 id="contact-form">Formulario de contacto</h2>
+
+            <label for="name" aria-labelledby="name-label">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required aria-required="true" aria-describedby="name-help">
+
+            <label for="email" aria-labelledby="email-label">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required aria-required="true" aria-describedby="email-help">
+
+            <label for="message" aria-labelledby="message-label">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="4" required aria-required="true" aria-describedby="message-help"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alexis Xavier Banderas Santamaria</p>
+    </footer>
+</body>
+</html>
