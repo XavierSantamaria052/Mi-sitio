@@ -3,89 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script defer src="./js/index.js"></script>
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script defer src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script defer src="/js/app.js"></script>
+
 </head>
 <body>
-    <header role="banner">
-        <h1>Alexis Xavier Banderas Santamaria</h1>
-        <p>Desarrollador Full Stack Java</p>
+<div id="cursor"></div>
+
+    <div class="circulos">
+        <svg class="circulo circulo1"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M53.6,-47.7C66.8,-40.3,73.2,-20.2,73.4,0.2C73.7,20.6,67.8,41.3,54.5,56.3C41.3,71.2,20.6,80.5,6.7,73.8C-7.2,67.1,-14.5,44.4,-19.2,29.4C-24,14.5,-26.3,7.2,-33.2,-6.9C-40.1,-21.1,-51.7,-42.2,-47,-49.6C-42.2,-56.9,-21.1,-50.5,-0.5,-50C20.2,-49.5,40.3,-55,53.6,-47.7Z" transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo2"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M32.6,-38.5C32.7,-25.9,16.7,-12.9,9.8,-3.8C2.9,5.3,5.2,10.4,2.2,16.2C-0.7,22.1,-8.8,28.7,-17.2,27.7C-25.5,26.7,-34,18.2,-35.7,8.7C-37.5,-0.9,-32.5,-11.4,-25.4,-25.7C-18.3,-39.9,-9.2,-57.9,3.5,-60.8C16.2,-63.6,32.5,-51.2,32.6,-38.5Z" transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo3"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M65,-36.8C72.7,-24.4,59.2,1,44.8,18.1C30.5,35.3,15.2,44.1,-2.4,45.5C-20.1,47,-40.3,40.9,-54.4,23.9C-68.6,6.9,-76.8,-21.1,-66.8,-35C-56.7,-48.8,-28.4,-48.5,0.2,-48.6C28.7,-48.7,57.4,-49.2,65,-36.8Z" transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo4"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path" d="M31.5,-29.2C44.3,-18.7,60.6,-9.3,64.6,4C68.6,17.3,60.3,34.6,47.5,46.9C34.6,59.2,17.3,66.4,4.8,61.5C-7.7,56.7,-15.4,39.9,-22.4,27.7C-29.5,15.4,-35.9,7.7,-35.4,0.5C-34.9,-6.7,-27.6,-13.5,-20.5,-24C-13.5,-34.5,-6.7,-48.9,1.3,-50.2C9.3,-51.5,18.7,-39.7,31.5,-29.2Z" transform="translate(100 100)" />
+        </svg>
+    </div>
+
+    <header class="header">
+        <h1 class="h1"><a href="#home" class="a" title="Xavier Santamaria">Portafolio</a></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="#home" class="a" title="home">Home</a></li>
+                <li class="li"><a href="#works" class="a" title="works">Works</a></li>
+                <li class="li"><a href="#about" class="a" title="about">About</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <nav role="navigation" aria-label="Navegación principal">
-        <ul>
-            <li><a href="#about" aria-label="Ir a la sección sobre mí">Sobre mí</a></li>
-            <li><a href="#skills" aria-label="Ir a la sección de habilidades">Habilidades</a></li>
-            <li><a href="experience.html" aria-label="Ir a la sección de proyectos">Proyectos</a></li>
-            <li><a href="contact.html" aria-label="Ir a la sección de contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <section id="about" aria-labelledby="about-title">
-            <h2 id="about-title">Sobre mí</h2>
-            <div class="image-container">
-                <img src="img/Foto.jpeg" alt="Imagen de Alexis Xavier, desarrollador Full Stack" class="profile-image"/>
+    <main class="main">
+
+        <div class="section home" id="home">
+            <section class="section info">
+                <h2 class="h2">Xavier Santamaria</h2>
+                <h3 class="h3">Full Stack Java Developer</h3>
+
+                <ul class="ul">
+                    <li class="li">
+                        <a href="https://www.linkedin.com/in/alexis-xavier-desarroladorfullstack/" class="a" title="linkedin">LinkedIn</a>
+                    </li>
+                    <li class="li">
+                        <a href="https://github.com/XavierSantamaria052" class="a" title="github">Github</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
+        <section class="section works" id="works">
+            <h2 class="h2">Works</h2>
+            <p>Aqui presento mis trabajos</p>
+
+            <div class="grid">
+                <article class="article">
+                    <a href="#" title="trabajo1" class="a">
+                        <figure class="figure">
+                            <img src="#" alt="imagen" class="img" loading="lazy">
+                        </figure>
+                        <h4 class="h4">MI SITIO</h4>    
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="#" title="trabajo1" class="a">
+                        <figure class="figure">
+                            <img src="assets/CopeLP.webp" alt="imagen" class="img" loading="lazy">
+                        </figure>
+                        <h4 class="h4">LANDING PAGE</h4>    
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="#" title="trabajo1" class="a">
+                        <figure class="figure">
+                            <img src="assets/Calculadora.webp" alt="imagen" class="img" loading="lazy">
+                        </figure>
+                        <h4 class="h4">CALCULADORA</h4>    
+                    </a>
+                </article>
+                <article class="article">
+                    <a href="#" title="trabajo1" class="a">
+                        <figure class="figure">
+                            <img src="assets/TerraCota.webp" alt="imagen" class="img" loading="lazy">
+                        </figure>
+                        <h4 class="h4">E-COMMERCE</h4>    
+                    </a>
+                </article>
             </div>
-            <p>Desarrollador Full Stack Java con experiencia en Spring Boot y React. Apasionado por crear soluciones eficientes y experiencias intuitivas, combinando tecnología, diseño y funcionalidad. Comprometido con la excelencia, el detalle y el aprendizaje continuo.</p>
         </section>
 
-        <section id="skills" aria-labelledby="skills-title">
-            <h2 id="skills-title">Habilidades</h2>
-            <div class="skill" aria-labelledby="html-icon">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/012/302/987/small_2x/stylized-3d-html-logo-side-view-png.png" alt="Ícono de HTML, lenguaje de marcado" />
-                <p id="html-icon">HTML</p>
-            </div>
-            <div class="skill" aria-labelledby="css-icon">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/665/094/small_2x/stylized-3d-css-icon-side-view-free-png.png" alt="Ícono de CSS, lenguaje de estilos" />
-                <p id="css-icon">CSS</p>
-            </div>
-            <div class="skill" aria-labelledby="scss-icon">
-                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-sass-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-preprocessor-scripting-language-css-coding-lang-pack-logos-icons-7578019.png?f=webp" alt="Ícono de SCSS, extensión de CSS" />
-                <p id="scss-icon">SCSS</p>
-            </div>
-            <div class="skill" aria-labelledby="js-icon">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small_2x/3d-javascript-logo-design-free-png.png" alt="Ícono de JavaScript, lenguaje de programación" />
-                <p id="js-icon">JavaScript</p>
-            </div>
-            <div class="skill" aria-labelledby="git-icon">
-                <img src="https://ouch-cdn2.icons8.com/_qv0GZ-TvUNz7L6kTDY6jQTK0ZL8PBgeSRketqzOyB0/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDEw/LzY2ZThhYzc1LTJh/ZjAtNDk4MC1hNThl/LWMwOWY0NWIyM2Mz/NS5wbmc.png" alt="Ícono de Git y GitHub, herramientas de control de versiones" />
-                <p id="git-icon">Git & GitHub</p>
-            </div>
-            <div class="skill" aria-labelledby="jquery-icon">
-                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-jquery-3d-icon-download-in-png-blend-fbx-gltf-file-formats--javascript-library-html-scripting-logo-frontend-coding-lang-pack-logos-icons-7578007.png" alt="Ícono de jQuery, biblioteca de JavaScript" />
-                <p id="jquery-icon">jQuery</p>
-            </div>
-            <div class="skill" aria-labelledby="ajax-icon">
-                <img src="https://static.thenounproject.com/png/4147235-200.png" alt="Ícono de AJAX, tecnología para solicitudes asíncronas" />
-                <p id="ajax-icon">AJAX & API´s</p>
-            </div>
-            <div class="skill" aria-labelledby="node-icon">
-                <img src="https://pixelwibes.com/public/front/images/service/node-logo.png" alt="Ícono de Node.js, entorno de ejecución de JavaScript" />
-                <p id="node-icon">Node.js</p>
-            </div>
-            <div class="skill" aria-labelledby="ts-icon">
-                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-mecanografiado-11492969-9325304.png?f=webp" alt="Ícono de TypeScript, lenguaje de programación" />
-                <p id="ts-icon">TypeScript</p>
-            </div>
-            <div class="skill" aria-labelledby="react-icon">
-                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-react-native-3d-logo-download-in-png-blend-fbx-gltf-file-formats--software-social-media-pack-logos-4642743.png?f=webp" alt="Ícono de React, biblioteca de JavaScript" />
-                <p id="react-icon">React</p>
-            </div>
-            <div class="skill" aria-labelledby="docker-icon">
-                <img src="https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png" alt="Ícono de Docker, plataforma de contenedores" />
-                <p id="docker-icon">Docker</p>
-            </div>
-            <div class="skill" aria-labelledby="maven-icon">
-                <img src="https://static-00.iconduck.com/assets.00/file-type-maven-icon-192x256-wb8b12w6.png" alt="Ícono de Maven, herramienta de construcción y gestión de proyectos" />
-                <p id="maven-icon">Maven</p>
-            </div>
+        <section class="section about" id="about">
+            <h2 class="h2">Sobre mi</h2>
+            <p class="p">Desarrollador apasionado, creando soluciones limpias, escalables y centradas en el usuario.</p>
+            <p class="p">Construyo aplicaciones eficientes, combinando lógica estructurada con buenas prácticas de desarrollo moderno.</p>
+            <p class="p">Siempre aprendiendo y mejorando como programador, enfocado en calidad, rendimiento y claridad del código.</p>
+
+            <ul class="rrss">
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/html.webp" alt="html" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/java.webp" alt="java" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/js.webp" alt="javascript" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/node-js.webp" alt="nodejs" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/sql.webp" alt="sql" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/sass.webp" alt="sass" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/social.webp" alt="docker" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/github.webp" alt="github" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/text.webp" alt="css" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/typescript.webp" alt="typescript" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/figma.webp" alt="figma" class="img">
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#" class="a" title="nombre" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/physics.webp" alt="react" class="img">
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 Alexis Xavier Banderas Santamaria</p>
+
+    <footer class="footer">
+        <span class="span">Hecho por Xavier Santamaria</span>
     </footer>
 </body>
 </html>
